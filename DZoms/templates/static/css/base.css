@@ -1,0 +1,374 @@
+﻿@charset "utf-8";
+/* reset */
+a,abbr,acronym,address,applet,article,aside,audio,b,blockquote,big,body,center,canvas,caption,cite,code,command,datalist,dd,del,details,dfn,dl,div,dt,em,embed,fieldset,figcaption,figure,font,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,keygen,label,legend,li,meter,nav,object,ol,output,p,pre,progress,q,s,samp,section,small,span,source,strike,strong,sub,sup,table,tbody,tfoot,thead,th,tr,tdvideo,tt,u,ul,var,menu
+{
+	background:transparent; border:0 none; font-size:100%; margin:0; padding:0; border:0; outline:0; vertical-align:top;
+}
+ol,ul,li 
+{
+	list-style:none;
+}
+blockquote,q 
+{
+	quotes:none;
+}
+table,table td
+{
+	padding:0; border:none; border-collapse:collapse;
+}
+img,embed
+{
+	vertical-align:top;
+}
+article,aside,audio,canvas,command,datalist,details,embed,figcaption,figure,footer,header,hgroup,keygen,meter,nav,output,progress,section,source,video
+{
+	display:block;
+}
+mark,rp,rt,ruby,summary,time
+{
+	display:inline;
+}
+/*-------------------- Global properties --------------------*/
+body
+{
+	background:#f3f3f3; font-family:Microsoft YaHei, Segoe UI, Arial, Tahoma, sans-serif; font-size:12px; line-height:20px; color:#797979; min-width:980px;
+}
+a
+{
+	color:#22bad8; text-decoration:none; cursor:pointer;
+}
+a:visited
+{
+	/*color:#707070;*/
+}
+a:hover
+{
+	color:#007187; text-decoration:underline;
+}
+a:active{
+	color:#007187;
+}
+.divide
+{
+	clear:both; line-height:0; font-size:0; display:block; height:0;
+}
+.blkHide
+{
+	display:none;
+}
+.alignRight
+{
+	text-align:right;
+}
+.altRowBg
+{
+	background-color:#f8f8f8;
+}
+.blkPadding
+{
+	padding:15px 0 0 0;
+}
+em.error
+{
+	font-style:normal; font-weight:bold; color:#E34C26;
+}
+.loading
+{
+	background:url(../images/ajax-loader.gif) 10px center no-repeat;
+}
+
+/*-------------------- login --------------------*/
+#formLogin
+{
+	padding:200px 0 0 0; white-space:nowrap; width:566px; margin:0 auto;
+}
+#formLogin h1
+{
+	font-size:30px; color:#036; line-height:30px;
+}
+#formLogin h2
+{
+	font-size:14px; padding-left:265px; color:#59C623;
+}
+#formLogin p
+{
+	font-size:10px; background:url(../images/supporting-elements-icon.png) 0px 0px no-repeat; padding-left:20px; width:264px; margin:0 auto; text-align:center; line-height:16px; padding-top:1px;
+}
+#formLogin em.error
+{
+	display:block; text-align:center; font-size:14px;
+}
+#formLogin ul
+{
+	padding:20px 0; height:30px; text-align:center;
+}
+#formLogin ul li
+{
+	display:inline; margin-right:10px;
+}
+/*-------------------- layout --------------------*/
+div.container
+{
+	padding-left:166px; padding-bottom:15px;
+}
+iframe.header
+{
+	overflow:hidden;
+}
+header
+{
+	margin-left:-166px; width:166px; float:left;
+}
+div.mainContent
+{
+	padding:0 15px 15px;
+}
+div.mainContent hgroup h5
+{
+	font-weight:normal; padding:10px 0 0 10px;
+}
+div.mainContent hgroup h1
+{
+	background-color:#036; font-size:20px; color:#fff; padding:5px 10px;
+}
+/*-------------------- header --------------------*/
+header hgroup
+{
+	background-color:#036; color:#fff; padding:15px;	
+}
+header hgroup h1
+{
+	font-size:10px; font-weight:normal;
+}
+header hgroup h2
+{
+	font-size:20px;
+}
+header hgroup h3
+{
+	font-size:10px; font-weight:normal; padding-top:10px; line-height:14px;
+}
+header hgroup h3 span
+{
+	font-size:14px; font-weight:bold; display:block; white-space:nowrap; overflow:hidden;
+}
+header hgroup h4
+{
+	font-size:12px; font-weight:normal; padding-top:10px; line-height:16px;
+}
+header hgroup h4 a
+{
+	display:inline-block; padding-right:10px;
+}
+header hgroup h4 a:hover
+{
+	color:#fff;
+}
+header nav ul li a
+{
+	border-right:1px solid #d7d7d7; border-bottom:1px solid #d7d7d7; padding:4px 15px; display:block; font-weight:bold; font-size:14px;
+}
+header nav ul > li > a.cur
+{
+	background-color:#59C623; color:#fff; border-color:#59C623;
+}
+header nav ul li ul
+{
+	display:none; border-bottom:1px solid #d7d7d7; border-right:1px solid #d7d7d7; padding:6px 0;
+}
+header nav ul li ul li a
+{
+	border:none; font-size:12px; padding:3px 0 3px 30px; font-weight:normal;
+}
+header nav ul li ul li a.cur
+{
+	background:#f8f8f8; color:#333; font-weight:bold;
+}
+footer
+{
+	position:fixed; display:block; padding:5px 10px; text-align:center; width:145px; bottom:0; left:0; font-size:10px; border-right:1px solid #d7d7d7;
+}
+/*-------------------- tab style --------------------*/
+nav.tab
+{
+	padding:15px 0 0 0; height:30px;
+}
+nav.tab ul li
+{
+	float:left;
+}
+nav.tab ul li a
+{
+	display:block; height:28px; line-height:28px; font-size:14px; color:#59C623; font-weight:bold; padding:0 10px; border:1px solid #59C623; margin-left:10px;
+}
+nav.tab ul li a:hover
+{
+	background-color:#59C623; color:#fff; text-decoration:none;
+}
+nav.tab ul li a.cur
+{
+	background-color:#59C623; color:#fff;	
+}
+/*-------------------- form style --------------------*/
+select, input, textarea, button
+{
+	font-family:Microsoft Yahei, SimSun, Tahoma, sans-serif; color:#444444; font-size:14px; outline:none;
+}
+input
+{
+    height:28px; border:1px solid #d7d7d7; padding:0; line-height:28px; padding:0 5px; width:120px;
+}
+input[type="checkbox"], input[type="radio"]
+{
+	font-size:16px; height:16px; width:16px; vertical-align:baseline;
+}
+textarea
+{
+	border:1px solid #d7d7d7; line-height:28px; padding-left:5px; font-size:14px; outline:0; margin:0; display:block;
+}
+button::-moz-focus-inner, input::-moz-focus-inner /*Remove button padding in FF*/
+{ 
+    border: 0; padding: 0;
+}
+button
+{
+    padding:0 10px; background-color:#59c623; color:#fff; font-weight:bold; border:none; line-height:30px; height:30px; cursor:pointer; font-size:14px; vertical-align:baseline;
+}
+button.less
+{
+	background-color:#e5e5e5; color:#444444;
+}
+button.small
+{
+    padding:5px; background-color:#0d8845; color:#fff; font-weight:bold; border:none; line-height:12px;
+}
+li.form
+{
+	margin-bottom:10px; clear:both; height:30px;
+}
+li.multi
+{
+	height:auto;
+}
+li.form label
+{
+	height:30px; color:#000; display:block; float:left; line-height:30px; font-weight:bold; white-space:nowrap; width:111px;
+}
+li.form label span
+{
+	background-color:#f8f8f8; text-align:right; padding:0 8px; display:block; float:right;
+}
+li.form label.inline
+{
+	font-size:14px; font-weight:normal; color:#797979; width:auto; text-align:left; padding:0; padding-right:10px; 
+}
+li.form b
+{
+	display:block; float:left; line-height:30px; padding:0 5px;
+}
+li.form input
+{
+	float:left;
+}
+li.form input[type="checkbox"], li.form input[type="radio"]
+{
+	margin-top:8px; margin-right:3px;
+}
+li.form select
+{
+	float:left; height:30px; font-size:14px;
+}
+li.form span.vButton
+{
+	padding:10px; display:block; float:left; width:30px; text-align:center;
+}
+li.form span.vButton button
+{
+	margin-bottom:5px; width:30px;
+}
+li.form .leftMargin
+{
+	padding-left:20px; width:auto;
+}
+fieldset p.blkFormBtn
+{
+	padding-left:111px; clear:both;
+}
+fieldset p.blkFormBtn em
+{
+	display:block;
+}
+fieldset p.blkFormBtn button
+{
+	margin-right:10px;
+}
+/*-------------------- dataSheet Table style --------------------*/
+output div.outDesc
+{
+	border-top:double #d7d7d7; padding:15px 10px 5px; height:30px; line-height:30px;
+}
+output div.outDesc mark
+{
+	background-color:transparent; display:block; float:right;
+}
+output div.outDesc mark button
+{
+	margin-left:5px;
+}
+output div.outDesc menu
+{
+	float:left;
+}
+output div.outDesc menu button
+{
+	margin-right:10px;
+}
+table
+{
+	border-collapse:collapse; width:100%;
+}
+table input[type="checkbox"]
+{
+	height:auto; height:auto;
+}
+table caption
+{
+	text-align:left;
+}
+table caption span
+{
+	display:inline-block; background-color:#59C623; color:#fff; font-size:14px; line-height:14px; font-weight:bold; width:auto; padding:8px 10px; float:left; vertical-align:baseline;
+}
+table caption a
+{
+	display:inline-block; float:right; margin-right:10px; line-height:30px; float:right;
+}
+table thead
+{
+	background-color:#22BAD8; color:#fff;
+}
+table thead th
+{
+	height:30px; padding:0 10px; line-height:30px; background-color:#22BAD8; white-space:nowrap;
+}
+table tbody td
+{
+	padding:5px 8px; text-align:center;
+}
+table tbody td.nowrap
+{
+	white-space:nowrap;
+}
+table tbody tr:nth-child(odd)
+{
+	background-color:#f8f8f8;
+}
+table tbody tr:hover
+{
+	background-color:#e8faff;
+}
+table tbody td.left
+{
+	text-align:left
+}
+/*-------------------- jquery ui dialog & login style --------------------*/

@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>DZoms</title>
+<meta name="author" content="duizhang">
+<link rel="stylesheet" href="/static/css/base.css">
+<script src="/static/script/jquery-1.8.2.min.js"></script>
+<script>
+$(function(){
+	$('header nav ul > li > a').click(function(){
+		$(this).next().toggle();
+	});
+})
+</script>
+</head>
+
+<body>
+<div class="container" style="padding:0;">
+    <div class="mainContent">
+        <hgroup>
+            <h5>top级管理菜单名称</h5>
+            <h1>2级管理菜单名称</h1>
+        </hgroup>
+        <nav class="tab">
+        	<ul>
+            	<li><a href="#">tab0</a></li>
+                <li><a href="#" class="cur">tab1</a></li>
+                <li><a href="#">tab2</a></li>
+                <li><a href="#">tab3</a></li>
+                <li><a href="#">tab4</a></li>
+                <li><a href="#">tab5 long name</a></li>
+            </ul>
+        </nav>
+        <div class="tabBlock blkHide">tabBlock</div>
+        <fieldset class="blkPadding">
+        	<ul>
+            	<li class="form">
+                	<label><span>some text label</span></label><input type="text"><b>元/人或者其他计量单位</b>
+                    <label class="leftMargin"><span>date</span></label><input type="date">
+                    <label class="leftMargin"><span>number</span></label><input type="number">
+                    <label class="leftMargin"><span>time</span></label><input type="time">
+                </li>
+                <li class="form multi">
+                	<label><span>time</span></label><textarea style="width:600px;" rows="3"></textarea>
+                </li>
+                <li class="form">
+                	<label><span>url string</span></label><input type="url" style="width:600px;">
+                </li>
+                <li class="form">
+                	<label><span>ex. checkbox</span></label>
+                    <input type="checkbox"><label class="inline" for="">option0</label>
+                    <input type="checkbox"><label class="inline" for="">option1</label>
+                    <input type="checkbox"><label class="inline" for="">option2</label>
+                    <input type="checkbox"><label class="inline" for="">option3</label>
+                    <label><span>ex. checkbox</span></label><select><option>please choice</option></select>
+                </li>
+                <li class="form">
+                	<label><span>ex. redio</span></label>
+                    <input type="radio"><label class="inline" for="">option0</label>
+                    <input type="radio"><label class="inline" for="">option1</label>
+                    <input type="radio"><label class="inline" for="">option2</label>
+                    <label class="leftMargin"><span>from</span></label><input type="date"><label style="width:auto;"><span>to</span></label><input type="date">
+                </li>
+                <li class="form multi">
+                	<label><span>left to right</span></label>
+                    <select multiple style="height:150px; width:100px;"><option>option</option></select>
+                    <span class="vButton"><button>&laquo;</button><button><</button><button>></button><button>&raquo;</button></span>
+                    <select multiple style="height:150px; width:100px;"><option>option</option></select>
+                    <label class="leftMargin"><span>files</span></label><input type="file" multiple style="width:auto;">
+                    <div class="divide"></div>                    
+                </li>
+            </ul>
+            
+            <p class="blkFormBtn">
+            <em class="error">Your Text Error Msg Here. example: date required blah blah blah blah</em>
+            <button>Search</button><button class="less">Cancel</button>
+            </p>
+        </fieldset>
+        <output class="blkPadding">
+        	<div class="outDesc">
+            	<mark>
+                <strong>15-25条记录 / 共3000条记录</strong>
+                <button title="上页">&laquo;</button><button title="下页">&raquo;</button>
+                </mark>
+                <menu>
+                	<button>new item</button><button>delete</button><button>stop</button><button>other action</button>
+                </menu>
+            </div>
+            <table>
+                <caption></caption>
+                <thead>
+                    <tr>
+                        <th><input type="checkbox"></th>
+                        <th>订单编号</th>
+                        <th>订单生成时间</th>
+                        <th>商品名称</th>
+                        <th>人数</th>
+                        <th>订购用户</th>
+                        <th>商品类型</th>
+                        <th>订单状态</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    	<td colspan="9">no Data</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>ghfggjkg-1345455</td>
+                        <td>2012-2-25 11:30</td> 
+                        <td class="left">西安国庆7日游</td>     
+                        <td>5</td>
+                        <td>张三</td>
+                        <td>团购线路</td>
+                        <td>待生成合同</td>
+                        <td><a href="agencyOrderDetailEdit.html">查看详细</a></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>ghfggjkg-1345455</td>
+                        <td>2012-2-25 11:30</td> 
+                        <td class="left">西安国庆7日游</td>     
+                        <td>5</td>
+                        <td>张三</td>
+                        <td>团购线路</td>
+                        <td>待生成合同</td>
+                        <td><a href="#">查看详细</a></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>ghfggjkg-1345455</td>
+                        <td>2012-2-25 11:30</td> 
+                        <td class="left">西安国庆7日游</td>     
+                        <td>5</td>
+                        <td>张三</td>
+                        <td>团购线路</td>
+                        <td>待生成合同</td>
+                        <td><a href="#">查看详细</a></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>ghfggjkg-1345455</td>
+                        <td>2012-2-25 11:30</td> 
+                        <td class="left">西安国庆7日游西安国庆7日游西安国庆7日游西安国庆7日游西安国庆7日游西安国庆7日游西安国庆7日游西安国庆7日游西安国庆7日游</td>     
+                        <td>5</td>
+                        <td>张三</td>
+                        <td>团购线路</td>
+                        <td>待生成合同</td>
+                        <td><a href="#">查看详细</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="outDesc" style="padding-top:5px;">
+            	<mark>
+                <strong>15-25条记录 / 共3000条记录</strong>
+                <button title="上页">&laquo;</button><button title="下页">&raquo;</button>
+                 </mark>
+            </div>
+        </output>
+    </div>
+</div>
+</body>
+</html>

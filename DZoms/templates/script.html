@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>DZoms</title>
+<meta name="author" content="duizhang">
+<link rel="stylesheet" href="/static/css/base.css">
+<script src="/static/script/jquery-1.8.2.min.js"></script>
+<script src="/static/script/script.js"></script>
+<script>
+$(function(){
+	$('header nav ul > li > a').click(function(){
+		$(this).next().toggle();
+	});
+})
+</script>
+</head>
+
+<body>
+<div class="container" style="padding:0;">
+    <div class="mainContent">
+        <hgroup>
+            <h1>脚本编写</h1>
+        </hgroup>
+        <div class="tabBlock blkHide">脚本</div>
+        <fieldset class="blkPadding">
+        	<ul>
+            	<li class="form"> 
+				<label><span>脚本名称</span></label><input type="text" name="title">
+                </li>
+            	<li class="form"> 
+				<label><span>存放路径</span></label><input type="text" name="path">
+                </li>
+            	<li class="form"> 
+				<label><span>主机</span></label>
+				<select name="host">
+					<option value="">选择主机</option>
+					{%for h in host%}
+					<option value="{{h.id}}">{{h.title}}</option>
+					{%endfor%}
+				</select>
+                </li>
+            	<li class="form"> 
+				<label><span>用户</span></label>
+				<select name="user">
+					<option value="">选择用户</option>
+				</select>
+                </li>
+                <li class="form multi">
+                	<label><span>内容</span></label><textarea style="width:600px;" rows="13" name="content"></textarea>
+                </li>
+            </ul>
+            
+            <p class="blkFormBtn">
+            <em class="error"></em>
+            <button name="commit">添加</button><button class="less" name="reset">取消</button>
+            </p>
+        </fieldset>
+        <output class="blkPadding">
+        	<div class="outDesc">
+            	<mark>
+                <strong>15-25条记录 / 共3000条记录</strong>
+                <button title="上页">&laquo;</button><button title="下页">&raquo;</button>
+                </mark>
+            </div>
+            <table>
+                <caption></caption>
+                <thead>
+                    <tr>
+						<th>脚本路径</th>
+                        <th>主机</th>
+                        <th>用户</th>
+                        <th>时间</th>
+						<th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+					{%for s in script%}
+					<tr id="script_{{s.id}}">
+						<td class="left">{{s.path}}{{s.title}}</td>
+						<td>
+							{%for h in host%}
+							{%ifequal s.host h.id%}
+							{{h.title}}
+							{%endifequal%}
+							{%endfor%}
+						</td>
+						<td>
+							{{s.user}}
+						</td>
+						<td>{{s.pubDate|date}}</td>
+						<td><a class="del"ref="{{s.id}}" href="javascript:void(0);">删除</a></td>
+					</tr>
+					{%endfor%}
+                </tbody>
+            </table>
+            <div class="outDesc" style="padding-top:5px;">
+            	<mark>
+                <strong>15-25条记录 / 共3000条记录</strong>
+                <button title="上页">&laquo;</button><button title="下页">&raquo;</button>
+                 </mark>
+            </div>
+        </output>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,417 @@
+2014-12-10 14:54:50,570 [INFO] : goodbye [192.168.1.110]:54100
+2014-12-10 14:55:55,704 [INFO] : accepted 192.168.1.110:54104
+2014-12-10 14:55:55,706 [INFO] : welcome [192.168.1.110]:54104
+2014-12-10 14:55:55,718 [INFO] : goodbye [192.168.1.110]:54104
+2014-12-10 14:56:35,465 [WARNING] : keyboard interrupt!
+2014-12-10 14:56:35,466 [INFO] : server has terminated
+2014-12-10 14:56:35,466 [INFO] : listener closed
+2014-12-10 14:57:27,281 [INFO] : goodbye [192.168.1.110]:54109
+2014-12-10 14:57:59,103 [WARNING] : keyboard interrupt!
+2014-12-10 14:57:59,104 [INFO] : server has terminated
+2014-12-10 14:57:59,104 [INFO] : listener closed
+2014-12-10 14:58:18,611 [INFO] : goodbye [192.168.1.110]:54113
+2014-12-10 15:19:41,083 [WARNING] : keyboard interrupt!
+2014-12-10 15:19:41,083 [INFO] : server has terminated
+2014-12-10 15:19:41,084 [INFO] : listener closed
+2014-12-10 15:21:00,164 [INFO] OMS/2048 : goodbye [192.168.1.110]:54153
+2014-12-10 15:21:05,746 [WARNING] OMS/2048 : keyboard interrupt!
+2014-12-10 15:21:05,746 [INFO] OMS/2048 : server has terminated
+2014-12-10 15:21:05,747 [INFO] OMS/2048 : listener closed
+2014-12-10 16:27:40,685 [INFO] OMS/2048 : goodbye [192.168.1.110]:54297
+2014-12-16 13:57:58,850 [INFO] OMS/2048 : goodbye [192.168.1.113]:50902
+2014-12-16 13:59:47,900 [INFO] OMS/2048 : accepted 192.168.1.113:50911
+2014-12-16 13:59:47,902 [INFO] OMS/2048 : welcome [192.168.1.113]:50911
+2014-12-16 13:59:48,014 [INFO] OMS/2048 : goodbye [192.168.1.113]:50911
+2014-12-16 14:00:40,240 [INFO] OMS/2048 : accepted 192.168.1.113:50917
+2014-12-16 14:00:40,241 [INFO] OMS/2048 : welcome [192.168.1.113]:50917
+2014-12-16 14:00:40,245 [INFO] OMS/2048 : goodbye [192.168.1.113]:50917
+2014-12-16 14:11:54,929 [INFO] OMS/2048 : accepted 192.168.1.113:50943
+2014-12-16 14:11:54,930 [INFO] OMS/2048 : welcome [192.168.1.113]:50943
+2014-12-16 14:11:54,935 [INFO] OMS/2048 : goodbye [192.168.1.113]:50943
+2014-12-16 14:12:09,147 [INFO] OMS/2048 : accepted 192.168.1.113:50948
+2014-12-16 14:12:09,148 [INFO] OMS/2048 : welcome [192.168.1.113]:50948
+2014-12-16 14:12:09,157 [INFO] OMS/2048 : goodbye [192.168.1.113]:50948
+2014-12-16 14:12:41,487 [INFO] OMS/2048 : accepted 192.168.1.113:50951
+2014-12-16 14:12:41,487 [INFO] OMS/2048 : welcome [192.168.1.113]:50951
+2014-12-16 14:12:41,492 [INFO] OMS/2048 : goodbye [192.168.1.113]:50951
+2014-12-16 14:17:17,757 [INFO] OMS/2048 : accepted 192.168.1.113:50964
+2014-12-16 14:17:17,758 [INFO] OMS/2048 : welcome [192.168.1.113]:50964
+2014-12-16 14:17:17,766 [INFO] OMS/2048 : goodbye [192.168.1.113]:50964
+2014-12-16 14:19:31,578 [INFO] OMS/2048 : accepted 192.168.1.113:50971
+2014-12-16 14:19:31,581 [INFO] OMS/2048 : welcome [192.168.1.113]:50971
+2014-12-16 14:19:31,586 [INFO] OMS/2048 : goodbye [192.168.1.113]:50971
+2014-12-16 14:20:02,601 [INFO] OMS/2048 : accepted 192.168.1.113:50978
+2014-12-16 14:20:02,601 [INFO] OMS/2048 : welcome [192.168.1.113]:50978
+2014-12-16 14:20:02,605 [INFO] OMS/2048 : goodbye [192.168.1.113]:50978
+2014-12-16 14:21:17,433 [WARNING] OMS/2048 : keyboard interrupt!
+2014-12-16 14:21:17,433 [INFO] OMS/2048 : server has terminated
+2014-12-16 14:21:17,434 [INFO] OMS/2048 : listener closed
+2014-12-16 16:42:20,538 [INFO] OMS/2048 : goodbye [192.168.1.113]:51336
+2014-12-16 17:06:14,332 [WARNING] OMS/2048 : keyboard interrupt!
+2014-12-16 17:06:14,332 [INFO] OMS/2048 : server has terminated
+2014-12-16 17:06:14,332 [INFO] OMS/2048 : listener closed
+2014-12-16 17:20:49,814 [DEBUG] OMS/2048 : Exception caught
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 305, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 535, in _handle_call
+    return self._local_objects[oid](*args, **dict(kwargs))
+  File "server.py", line 30, in exposed_run
+    cmd = json.loads(cmdString)
+NameError: name 'json' is not defined
+2014-12-16 17:20:49,952 [INFO] OMS/2048 : goodbye [192.168.1.113]:51493
+2014-12-16 17:21:13,010 [WARNING] OMS/2048 : keyboard interrupt!
+2014-12-16 17:21:13,010 [INFO] OMS/2048 : server has terminated
+2014-12-16 17:21:13,011 [INFO] OMS/2048 : listener closed
+2014-12-16 17:21:29,126 [DEBUG] OMS/2048 : Exception caught
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 305, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 535, in _handle_call
+    return self._local_objects[oid](*args, **dict(kwargs))
+  File "server.py", line 31, in exposed_run
+    mod = "mid_"+cmd["mid"]
+KeyError: 'mid'
+2014-12-16 17:21:29,209 [INFO] OMS/2048 : goodbye [192.168.1.113]:51495
+2014-12-16 17:21:53,896 [WARNING] OMS/2048 : keyboard interrupt!
+2014-12-16 17:21:53,896 [INFO] OMS/2048 : server has terminated
+2014-12-16 17:21:53,896 [INFO] OMS/2048 : listener closed
+2014-12-16 17:22:47,171 [DEBUG] OMS/2048 : Exception caught
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 305, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 535, in _handle_call
+    return self._local_objects[oid](*args, **dict(kwargs))
+  File "server.py", line 31, in exposed_run
+    return HttpResponse(cmd)
+NameError: name 'HttpResponse' is not defined
+2014-12-16 17:22:47,232 [INFO] OMS/2048 : goodbye [192.168.1.113]:51505
+2014-12-16 17:22:56,902 [WARNING] OMS/2048 : keyboard interrupt!
+2014-12-16 17:22:56,902 [INFO] OMS/2048 : server has terminated
+2014-12-16 17:22:56,902 [INFO] OMS/2048 : listener closed
+2014-12-16 17:23:23,397 [DEBUG] OMS/2048 : Exception caught
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 305, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 541, in _handle_getattr
+    return self._access_attr(oid, name, (), "_rpyc_getattr", "allow_getattr", getattr)
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 504, in _access_attr
+    raise AttributeError("cannot access %r" % (name,))
+AttributeError: cannot access 'iteritems'
+2014-12-16 17:23:23,399 [DEBUG] OMS/2048 : Exception caught
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 305, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 541, in _handle_getattr
+    return self._access_attr(oid, name, (), "_rpyc_getattr", "allow_getattr", getattr)
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 504, in _access_attr
+    raise AttributeError("cannot access %r" % (name,))
+AttributeError: cannot access 'iteritems'
+2014-12-16 17:23:23,477 [INFO] OMS/2048 : goodbye [192.168.1.113]:51508
+2014-12-16 17:23:53,596 [WARNING] OMS/2048 : keyboard interrupt!
+2014-12-16 17:23:53,596 [INFO] OMS/2048 : server has terminated
+2014-12-16 17:23:53,596 [INFO] OMS/2048 : listener closed
+2014-12-16 17:24:48,589 [DEBUG] OMS/2048 : Exception caught
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 305, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 535, in _handle_call
+    return self._local_objects[oid](*args, **dict(kwargs))
+  File "server.py", line 36, in exposed_run
+    return mid+"not found"
+NameError: name 'mid' is not defined
+2014-12-16 17:24:48,717 [INFO] OMS/2048 : goodbye [192.168.1.113]:51515
+2014-12-16 17:24:55,776 [WARNING] OMS/2048 : keyboard interrupt!
+2014-12-16 17:24:55,776 [INFO] OMS/2048 : server has terminated
+2014-12-16 17:24:55,776 [INFO] OMS/2048 : listener closed
+2014-12-16 17:26:04,620 [INFO] OMS/2048 : goodbye [192.168.1.113]:51519
+2014-12-16 17:26:18,323 [WARNING] OMS/2048 : keyboard interrupt!
+2014-12-16 17:26:18,323 [INFO] OMS/2048 : server has terminated
+2014-12-16 17:26:18,324 [INFO] OMS/2048 : listener closed
+2014-12-16 17:29:40,515 [INFO] OMS/2048 : goodbye [192.168.1.113]:51529
+2014-12-16 17:29:50,077 [WARNING] OMS/2048 : keyboard interrupt!
+2014-12-16 17:29:50,077 [INFO] OMS/2048 : server has terminated
+2014-12-16 17:29:50,078 [INFO] OMS/2048 : listener closed
+2014-12-16 17:30:16,736 [DEBUG] OMS/2048 : Exception caught
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 305, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 535, in _handle_call
+    return self._local_objects[oid](*args, **dict(kwargs))
+  File "server.py", line 35, in exposed_run
+    exec importString
+  File "<string>", line 1, in <module>
+ImportError: No module named mid_9
+2014-12-16 17:30:16,811 [INFO] OMS/2048 : goodbye [192.168.1.113]:51536
+2014-12-16 17:30:31,705 [WARNING] OMS/2048 : keyboard interrupt!
+2014-12-16 17:30:31,705 [INFO] OMS/2048 : server has terminated
+2014-12-16 17:30:31,706 [INFO] OMS/2048 : listener closed
+2014-12-16 17:33:19,848 [DEBUG] OMS/2048 : Exception caught
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 305, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 535, in _handle_call
+    return self._local_objects[oid](*args, **dict(kwargs))
+  File "server.py", line 35, in exposed_run
+    import mid_9
+ImportError: No module named mid_9
+2014-12-16 17:33:19,904 [INFO] OMS/2048 : goodbye [192.168.1.113]:51542
+2014-12-16 17:33:38,147 [WARNING] OMS/2048 : keyboard interrupt!
+2014-12-16 17:33:38,148 [INFO] OMS/2048 : server has terminated
+2014-12-16 17:33:38,148 [INFO] OMS/2048 : listener closed
+2014-12-16 17:38:36,220 [DEBUG] OMS/2048 : Exception caught
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 305, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 535, in _handle_call
+    return self._local_objects[oid](*args, **dict(kwargs))
+  File "server.py", line 31, in exposed_run
+    mod = "mid_"+string(cmd["module"])
+NameError: name 'string' is not defined
+2014-12-16 17:38:36,303 [INFO] OMS/2048 : goodbye [192.168.1.113]:51557
+2014-12-16 17:38:43,733 [WARNING] OMS/2048 : keyboard interrupt!
+2014-12-16 17:38:43,733 [INFO] OMS/2048 : server has terminated
+2014-12-16 17:38:43,734 [INFO] OMS/2048 : listener closed
+2014-12-16 17:38:57,496 [DEBUG] OMS/2048 : Exception caught
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 305, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 541, in _handle_getattr
+    return self._access_attr(oid, name, (), "_rpyc_getattr", "allow_getattr", getattr)
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 504, in _access_attr
+    raise AttributeError("cannot access %r" % (name,))
+AttributeError: cannot access 'iteritems'
+2014-12-16 17:38:57,502 [DEBUG] OMS/2048 : Exception caught
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 305, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 541, in _handle_getattr
+    return self._access_attr(oid, name, (), "_rpyc_getattr", "allow_getattr", getattr)
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 504, in _access_attr
+    raise AttributeError("cannot access %r" % (name,))
+AttributeError: cannot access 'iteritems'
+2014-12-16 17:38:57,605 [INFO] OMS/2048 : goodbye [192.168.1.113]:51560
+2014-12-16 17:40:00,722 [WARNING] OMS/2048 : keyboard interrupt!
+2014-12-16 17:40:00,722 [INFO] OMS/2048 : server has terminated
+2014-12-16 17:40:00,723 [INFO] OMS/2048 : listener closed
+2014-12-16 17:40:30,267 [DEBUG] OMS/2048 : Exception caught
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 305, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 541, in _handle_getattr
+    return self._access_attr(oid, name, (), "_rpyc_getattr", "allow_getattr", getattr)
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 504, in _access_attr
+    raise AttributeError("cannot access %r" % (name,))
+AttributeError: cannot access 'iteritems'
+2014-12-16 17:40:30,269 [DEBUG] OMS/2048 : Exception caught
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 305, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 541, in _handle_getattr
+    return self._access_attr(oid, name, (), "_rpyc_getattr", "allow_getattr", getattr)
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 504, in _access_attr
+    raise AttributeError("cannot access %r" % (name,))
+AttributeError: cannot access 'iteritems'
+2014-12-16 17:40:30,372 [INFO] OMS/2048 : goodbye [192.168.1.113]:51569
+2014-12-16 17:40:37,323 [INFO] OMS/2048 : accepted 192.168.1.113:51578
+2014-12-16 17:40:37,324 [INFO] OMS/2048 : welcome [192.168.1.113]:51578
+2014-12-16 17:40:38,874 [DEBUG] OMS/2048 : Exception caught
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 305, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 541, in _handle_getattr
+    return self._access_attr(oid, name, (), "_rpyc_getattr", "allow_getattr", getattr)
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 504, in _access_attr
+    raise AttributeError("cannot access %r" % (name,))
+AttributeError: cannot access 'iteritems'
+2014-12-16 17:40:38,875 [DEBUG] OMS/2048 : Exception caught
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 305, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 541, in _handle_getattr
+    return self._access_attr(oid, name, (), "_rpyc_getattr", "allow_getattr", getattr)
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 504, in _access_attr
+    raise AttributeError("cannot access %r" % (name,))
+AttributeError: cannot access 'iteritems'
+2014-12-16 17:40:38,967 [INFO] OMS/2048 : goodbye [192.168.1.113]:51578
+2014-12-16 17:41:00,195 [WARNING] OMS/2048 : keyboard interrupt!
+2014-12-16 17:41:00,195 [INFO] OMS/2048 : server has terminated
+2014-12-16 17:41:00,195 [INFO] OMS/2048 : listener closed
+2014-12-16 17:41:16,306 [INFO] OMS/2048 : goodbye [192.168.1.113]:51590
+2014-12-16 17:41:32,199 [INFO] OMS/2048 : accepted 192.168.1.113:51598
+2014-12-16 17:41:32,200 [INFO] OMS/2048 : welcome [192.168.1.113]:51598
+2014-12-16 17:41:33,618 [INFO] OMS/2048 : goodbye [192.168.1.113]:51598
+2014-12-16 17:42:24,332 [WARNING] OMS/2048 : keyboard interrupt!
+2014-12-16 17:42:24,332 [INFO] OMS/2048 : server has terminated
+2014-12-16 17:42:24,333 [INFO] OMS/2048 : listener closed
+2014-12-16 17:57:55,712 [INFO] OMS/2048 : goodbye [192.168.1.113]:51640
+2014-12-16 17:59:17,829 [WARNING] OMS/2048 : keyboard interrupt!
+2014-12-16 17:59:17,830 [INFO] OMS/2048 : server has terminated
+2014-12-16 17:59:17,830 [INFO] OMS/2048 : listener closed
+2014-12-16 18:00:48,747 [INFO] OMS/2048 : goodbye [192.168.1.113]:51657
+2014-12-16 18:02:30,117 [INFO] OMS/2048 : accepted 192.168.1.113:51669
+2014-12-16 18:02:30,118 [INFO] OMS/2048 : welcome [192.168.1.113]:51669
+2014-12-16 18:02:31,535 [INFO] OMS/2048 : goodbye [192.168.1.113]:51669
+2014-12-16 18:02:36,168 [INFO] OMS/2048 : accepted 192.168.1.113:51678
+2014-12-16 18:02:36,200 [INFO] OMS/2048 : welcome [192.168.1.113]:51678
+2014-12-16 18:02:37,610 [INFO] OMS/2048 : goodbye [192.168.1.113]:51678
+2014-12-17 10:30:20,670 [INFO] OMS/2048 : goodbye [192.168.1.113]:57287
+2014-12-17 10:32:10,213 [INFO] OMS/2048 : accepted 192.168.1.113:57300
+2014-12-17 10:32:10,214 [INFO] OMS/2048 : welcome [192.168.1.113]:57300
+2014-12-17 10:32:12,390 [INFO] OMS/2048 : goodbye [192.168.1.113]:57300
+2014-12-17 10:32:47,563 [INFO] OMS/2048 : accepted 192.168.1.113:57313
+2014-12-17 10:32:47,564 [INFO] OMS/2048 : welcome [192.168.1.113]:57313
+2014-12-17 10:33:48,462 [INFO] OMS/2048 : goodbye [192.168.1.113]:57313
+2014-12-17 10:37:35,737 [INFO] OMS/2048 : accepted 192.168.1.113:57339
+2014-12-17 10:37:35,739 [INFO] OMS/2048 : welcome [192.168.1.113]:57339
+2014-12-17 10:37:37,102 [INFO] OMS/2048 : goodbye [192.168.1.113]:57339
+2014-12-17 10:38:35,751 [INFO] OMS/2048 : accepted 192.168.1.113:57353
+2014-12-17 10:38:35,753 [INFO] OMS/2048 : welcome [192.168.1.113]:57353
+2014-12-17 10:38:37,075 [INFO] OMS/2048 : goodbye [192.168.1.113]:57353
+2014-12-17 10:45:01,113 [INFO] OMS/2048 : accepted 192.168.1.113:57376
+2014-12-17 10:45:01,116 [INFO] OMS/2048 : welcome [192.168.1.113]:57376
+2014-12-17 10:45:06,937 [INFO] OMS/2048 : goodbye [192.168.1.113]:57376
+2014-12-17 10:46:40,579 [INFO] OMS/2048 : accepted 192.168.1.113:57393
+2014-12-17 10:46:40,580 [INFO] OMS/2048 : welcome [192.168.1.113]:57393
+2014-12-17 10:46:41,835 [INFO] OMS/2048 : goodbye [192.168.1.113]:57393
+2014-12-17 10:47:13,172 [INFO] OMS/2048 : accepted 192.168.1.113:57404
+2014-12-17 10:47:13,175 [INFO] OMS/2048 : welcome [192.168.1.113]:57404
+2014-12-17 10:47:14,510 [INFO] OMS/2048 : goodbye [192.168.1.113]:57404
+2014-12-17 10:48:01,140 [INFO] OMS/2048 : accepted 192.168.1.113:57415
+2014-12-17 10:48:01,141 [INFO] OMS/2048 : welcome [192.168.1.113]:57415
+2014-12-17 10:48:02,458 [INFO] OMS/2048 : goodbye [192.168.1.113]:57415
+2014-12-17 10:48:20,438 [INFO] OMS/2048 : accepted 192.168.1.113:57429
+2014-12-17 10:48:20,439 [INFO] OMS/2048 : welcome [192.168.1.113]:57429
+2014-12-17 10:48:21,724 [INFO] OMS/2048 : goodbye [192.168.1.113]:57429
+2014-12-17 10:48:23,612 [INFO] OMS/2048 : accepted 192.168.1.113:57439
+2014-12-17 10:48:23,613 [INFO] OMS/2048 : welcome [192.168.1.113]:57439
+2014-12-17 10:48:24,991 [INFO] OMS/2048 : goodbye [192.168.1.113]:57439
+2014-12-17 10:48:56,837 [INFO] OMS/2048 : accepted 192.168.1.113:57453
+2014-12-17 10:48:56,838 [INFO] OMS/2048 : welcome [192.168.1.113]:57453
+2014-12-17 10:48:58,066 [INFO] OMS/2048 : goodbye [192.168.1.113]:57453
+2014-12-17 10:49:04,731 [INFO] OMS/2048 : accepted 192.168.1.113:57464
+2014-12-17 10:49:04,732 [INFO] OMS/2048 : welcome [192.168.1.113]:57464
+2014-12-17 10:49:06,039 [INFO] OMS/2048 : goodbye [192.168.1.113]:57464
+2014-12-17 11:51:56,167 [INFO] OMS/2048 : goodbye [192.168.1.113]:37539
+2014-12-17 11:52:05,556 [INFO] OMS/2048 : accepted 192.168.1.113:37552
+2014-12-17 11:52:05,557 [INFO] OMS/2048 : welcome [192.168.1.113]:37552
+2014-12-17 11:52:06,888 [INFO] OMS/2048 : goodbye [192.168.1.113]:37552
+2014-12-17 11:52:13,456 [INFO] OMS/2048 : accepted 192.168.1.113:37562
+2014-12-17 11:52:13,457 [INFO] OMS/2048 : welcome [192.168.1.113]:37562
+2014-12-17 11:52:15,842 [INFO] OMS/2048 : goodbye [192.168.1.113]:37562
+2014-12-17 11:52:18,045 [INFO] OMS/2048 : accepted 192.168.1.113:37572
+2014-12-17 11:52:18,046 [INFO] OMS/2048 : welcome [192.168.1.113]:37572
+2014-12-17 11:52:19,327 [INFO] OMS/2048 : goodbye [192.168.1.113]:37572
+2014-12-17 11:52:20,575 [INFO] OMS/2048 : accepted 192.168.1.113:37582
+2014-12-17 11:52:20,576 [INFO] OMS/2048 : welcome [192.168.1.113]:37582
+2014-12-17 11:52:21,986 [INFO] OMS/2048 : goodbye [192.168.1.113]:37582
+2014-12-17 11:52:24,460 [INFO] OMS/2048 : accepted 192.168.1.113:37592
+2014-12-17 11:52:24,461 [INFO] OMS/2048 : welcome [192.168.1.113]:37592
+2014-12-17 11:52:25,760 [INFO] OMS/2048 : goodbye [192.168.1.113]:37592
+2014-12-17 13:53:42,929 [INFO] OMS/2048 : accepted 192.168.1.113:37904
+2014-12-17 13:53:42,931 [INFO] OMS/2048 : welcome [192.168.1.113]:37904
+2014-12-17 13:53:44,852 [INFO] OMS/2048 : goodbye [192.168.1.113]:37904
+2014-12-17 15:50:13,520 [INFO] OMS/2048 : accepted 192.168.1.113:38252
+2014-12-17 15:50:13,524 [INFO] OMS/2048 : welcome [192.168.1.113]:38252
+2014-12-17 15:50:15,021 [INFO] OMS/2048 : goodbye [192.168.1.113]:38252
+2014-12-17 17:15:32,553 [INFO] OMS/2048 : accepted 192.168.1.113:38541
+2014-12-17 17:15:32,554 [INFO] OMS/2048 : welcome [192.168.1.113]:38541
+2014-12-17 17:15:33,842 [INFO] OMS/2048 : goodbye [192.168.1.113]:38541
+2014-12-19 14:41:18,285 [DEBUG] OMS/2048 : Exception caught
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 305, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 535, in _handle_call
+    return self._local_objects[oid](*args, **dict(kwargs))
+  File "batchManagementServer.py", line 40, in exposed_run
+    if len(result["dark"])==0 and len(result["contacted"])==0:
+TypeError: string indices must be integers, not str
+2014-12-19 14:41:18,439 [INFO] OMS/2048 : goodbye [192.168.1.111]:49332
+2014-12-19 14:41:50,807 [WARNING] OMS/2048 : keyboard interrupt!
+2014-12-19 14:41:50,808 [INFO] OMS/2048 : server has terminated
+2014-12-19 14:41:50,808 [INFO] OMS/2048 : listener closed
+2014-12-19 14:43:13,127 [DEBUG] OMS/2048 : Exception caught
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 305, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 535, in _handle_call
+    return self._local_objects[oid](*args, **dict(kwargs))
+  File "batchManagementServer.py", line 40, in exposed_run
+    if len(result["dark"])==0 and len(result["contacted"])==0:
+TypeError: string indices must be integers, not str
+2014-12-19 14:43:13,201 [INFO] OMS/2048 : goodbye [192.168.1.111]:49339
+2014-12-19 14:44:14,848 [INFO] OMS/2048 : accepted 192.168.1.111:49347
+2014-12-19 14:44:14,849 [INFO] OMS/2048 : welcome [192.168.1.111]:49347
+2014-12-19 14:44:17,938 [DEBUG] OMS/2048 : Exception caught
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 305, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 535, in _handle_call
+    return self._local_objects[oid](*args, **dict(kwargs))
+  File "batchManagementServer.py", line 40, in exposed_run
+    if len(result["dark"])==0 and len(result["contacted"])==0:
+TypeError: string indices must be integers, not str
+2014-12-19 14:44:18,004 [INFO] OMS/2048 : goodbye [192.168.1.111]:49347
+2014-12-19 14:44:23,810 [INFO] OMS/2048 : accepted 192.168.1.111:49354
+2014-12-19 14:44:23,811 [INFO] OMS/2048 : welcome [192.168.1.111]:49354
+2014-12-19 14:44:26,899 [DEBUG] OMS/2048 : Exception caught
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 305, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 535, in _handle_call
+    return self._local_objects[oid](*args, **dict(kwargs))
+  File "batchManagementServer.py", line 40, in exposed_run
+    if len(result["dark"])==0 and len(result["contacted"])==0:
+TypeError: string indices must be integers, not str
+2014-12-19 14:44:26,969 [INFO] OMS/2048 : goodbye [192.168.1.111]:49354
+2014-12-19 14:45:25,585 [WARNING] OMS/2048 : keyboard interrupt!
+2014-12-19 14:45:25,586 [INFO] OMS/2048 : server has terminated
+2014-12-19 14:45:25,586 [INFO] OMS/2048 : listener closed
+2014-12-19 14:46:13,564 [DEBUG] OMS/2048 : Exception caught
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 305, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/usr/lib/python2.6/site-packages/rpyc-3.3.0-py2.6.egg/rpyc/core/protocol.py", line 535, in _handle_call
+    return self._local_objects[oid](*args, **dict(kwargs))
+  File "batchManagementServer.py", line 41, in exposed_run
+    if len(result["dark"])==0 and len(result["contacted"])==0:
+TypeError: string indices must be integers, not str
+2014-12-19 14:46:13,626 [INFO] OMS/2048 : goodbye [192.168.1.111]:49366
+2014-12-19 14:46:35,243 [WARNING] OMS/2048 : keyboard interrupt!
+2014-12-19 14:46:35,243 [INFO] OMS/2048 : server has terminated
+2014-12-19 14:46:35,244 [INFO] OMS/2048 : listener closed
+2014-12-19 14:48:22,813 [INFO] OMS/2048 : goodbye [192.168.1.111]:49373
+2014-12-19 14:48:44,241 [INFO] OMS/2048 : accepted 192.168.1.111:49383
+2014-12-19 14:48:44,241 [INFO] OMS/2048 : welcome [192.168.1.111]:49383
+2014-12-19 14:48:57,489 [INFO] OMS/2048 : goodbye [192.168.1.111]:49383
+2014-12-19 14:49:05,589 [WARNING] OMS/2048 : keyboard interrupt!
+2014-12-19 14:49:05,590 [INFO] OMS/2048 : server has terminated
+2014-12-19 14:49:05,590 [INFO] OMS/2048 : listener closed
+2014-12-19 14:52:42,468 [INFO] OMS/2048 : goodbye [192.168.1.111]:49413
+2014-12-19 14:52:50,292 [INFO] OMS/2048 : accepted 192.168.1.111:49423
+2014-12-19 14:52:50,293 [INFO] OMS/2048 : welcome [192.168.1.111]:49423
+2014-12-19 14:52:52,114 [INFO] OMS/2048 : goodbye [192.168.1.111]:49423
+2014-12-19 14:52:53,936 [INFO] OMS/2048 : accepted 192.168.1.111:49433
+2014-12-19 14:52:53,937 [INFO] OMS/2048 : welcome [192.168.1.111]:49433
+2014-12-19 14:52:55,554 [INFO] OMS/2048 : goodbye [192.168.1.111]:49433
+2014-12-19 14:52:56,558 [INFO] OMS/2048 : accepted 192.168.1.111:49443
+2014-12-19 14:52:56,562 [INFO] OMS/2048 : welcome [192.168.1.111]:49443
+2014-12-19 14:52:58,138 [INFO] OMS/2048 : goodbye [192.168.1.111]:49443
+2014-12-19 14:53:04,168 [INFO] OMS/2048 : accepted 192.168.1.111:49454
+2014-12-19 14:53:04,170 [INFO] OMS/2048 : welcome [192.168.1.111]:49454
+2014-12-19 14:53:05,802 [INFO] OMS/2048 : goodbye [192.168.1.111]:49454
+2014-12-19 14:53:23,321 [INFO] OMS/2048 : accepted 192.168.1.111:49467
+2014-12-19 14:53:23,322 [INFO] OMS/2048 : welcome [192.168.1.111]:49467
+2014-12-19 14:53:25,020 [INFO] OMS/2048 : goodbye [192.168.1.111]:49467
+2014-12-19 14:53:26,979 [INFO] OMS/2048 : accepted 192.168.1.111:49477
+2014-12-19 14:53:26,980 [INFO] OMS/2048 : welcome [192.168.1.111]:49477
+2014-12-19 14:53:28,647 [INFO] OMS/2048 : goodbye [192.168.1.111]:49477
+2014-12-19 14:53:30,142 [INFO] OMS/2048 : accepted 192.168.1.111:49487
+2014-12-19 14:53:30,142 [INFO] OMS/2048 : welcome [192.168.1.111]:49487
+2014-12-19 14:53:31,795 [INFO] OMS/2048 : goodbye [192.168.1.111]:49487
+2014-12-19 15:06:14,728 [INFO] OMS/2048 : accepted 192.168.1.111:49523
+2014-12-19 15:06:14,733 [INFO] OMS/2048 : welcome [192.168.1.111]:49523
+2014-12-19 15:06:16,636 [INFO] OMS/2048 : goodbye [192.168.1.111]:49523
+2014-12-19 15:33:18,160 [WARNING] OMS/2048 : keyboard interrupt!
+2014-12-19 15:33:18,161 [INFO] OMS/2048 : server has terminated
+2014-12-19 15:33:18,161 [INFO] OMS/2048 : listener closed

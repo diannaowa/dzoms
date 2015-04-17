@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>DZoms</title>
+<meta name="author" content="duizhang">
+<link rel="stylesheet" href="/static/css/base.css">
+<script src="/static/script/jquery-1.8.2.min.js"></script>
+<script src="/static/script/dbMonitoring.js"></script>
+<script>
+$(function(){
+	$('header nav ul > li > a').click(function(){
+		$(this).next().toggle();
+	});
+})
+</script>
+</head>
+
+<body>
+<div class="container" style="padding:0;">
+    <div class="mainContent">
+        <hgroup>
+		<h1>数据库监控</h1>
+        </hgroup>
+        <div class="tabBlock blkHide">tabBlock</div>
+        <fieldset class="blkPadding">
+        	<ul>
+                <li class="form">
+                	<label><span>数据库名称</span></label><input type="text" name="title" style="width:200px;">
+                </li>
+                <li class="form">
+                	<label><span>数据库主机</span></label><input type="text" name="ip" style="width:600px;">
+                </li>
+                <li class="form">
+				<label><span>是否从库</span></label><input type="checkbox" name="slave" value="1">
+                </li>
+            </ul>
+            
+            <p class="blkFormBtn">
+            <em class="error"></em>
+            <button name="commit">提交</button><button class="less">取消</button>
+            </p>
+        </fieldset>
+        <output class="blkPadding">
+		<button name="initcache">初始化缓存</button><br /><br />
+            <table>
+                <caption></caption>
+                <thead>
+                    <tr>
+						<th>ID</th>
+                        <th>数据库名称</th>
+                        <th>主机</th>
+                        <th>是否从库</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+					{%for b in db%}
+					<tr class="db_{{b.id}}">
+						<td>{{b.id}}</td>
+						<td>{{b.title }}</td>
+						<td>{{b.host}}</td>
+						<td>{%ifequal b.slave 1%}从{%else%}主{%endifequal%}</td>
+						<td><a href="javascript:void(0);" class="createRRD" rel="{{b.id}}">创建RRD</a>&nbsp;&nbsp;<a href="javascript:void(0);" class="delDB" rel="{{b.id}}">删除</a></td>
+					</tr>
+					{%endfor%}
+                </tbody>
+            </table>
+        </output>
+    </div>
+</div>
+</body>
+</html>

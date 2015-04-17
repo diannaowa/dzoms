@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>1youku.com WebSite Management</title>
+<meta name="author" content="1youku.com">
+<link rel="stylesheet" href="/static/css/base.css">
+<script src="/static/script/jquery-1.8.2.min.js"></script>
+<script>
+$(function(){
+	$('header nav ul > li > a').click(function(){
+		$(this).next().toggle();
+		if($('header').height() > ($(window).height() - 20)){
+			$('footer').fadeOut('fast');
+		} else {
+			$('footer').fadeIn('fast');	
+		}
+	});
+})
+</script>
+</head>
+
+<body>
+<div class="container">
+	<header>
+        <nav>
+            <ul>
+                <li><a class="cur">控制面板</a>
+                </li>
+                <li><a>批量管理</a>
+                    <ul>
+                        <li><a href="/crontab/" target="content">计划任务</a></li>
+                        <li><a href="/createScript/" target="content">脚本编写</a></li>
+                        <li><a href="/remoteControl/" target="content">远程控制</a></li>
+                    </ul>
+                </li>
+                <li><a>监控管理</a>
+                    <ul>
+                        <li><a href="/performanceMonitoring/" target="content">主机监控</a></li>
+                        <li><a href="/businessGraph/" target="content">业务质量监控</a></li>
+                        <li><a href="/dbGraph/" target="content">数据库监控</a></li>
+                    </ul>
+                </li>
+				<li><a>日志分析</a>
+					<ul>
+						<li><a href="/#/" target="content">配置规则</a></li>
+					</ul>
+				</li>
+                <li><a href="/module/" target="content">模块配置</a></li>
+                <li><a>主机配置</a>
+                    <ul>
+                        <li><a href="/hostCategory/" target="content">分类</a></li>
+                        <li><a href="/host/" target="content">主机</a></li>
+                        <li><a href="/user/" target="content">主机用户</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>DZoms</title>
+<meta name="author" content="duizhang">
+<link rel="stylesheet" href="/static/css/base.css">
+<script src="/static/script/jquery-1.8.2.min.js"></script>
+<script src="/static/script/host.js"></script>
+<script>
+$(function(){
+	$('header nav ul > li > a').click(function(){
+		$(this).next().toggle();
+	});
+})
+</script>
+</head>
+
+<body>
+<div class="container" style="padding:0;">
+    <div class="mainContent">
+        <hgroup>
+            <h1>主机管理</h1>
+        </hgroup>
+        </nav>
+        <div class="tabBlock blkHide">tabBlock</div>
+        <fieldset class="blkPadding">
+        	<ul>
+            	<li class="form">
+				<label><span>主机名称</span></label><input type="text" name="hosttitle">
+                </li>
+            	<li class="form">
+				<label><span>主机IP</span></label><input type="text" name="ip">
+                </li>
+            	<li class="form">
+				<label><span>主机OS</span></label><input type="text" name="os">
+                </li>
+                <li class="form">
+                	<label><span>主机位置</span></label><input type="text" name="position">
+                </li>
+                <li class="form">
+                	<label><span>sudo用户</span></label><input type="text" name="sudo">
+                </li>
+                <li class="form">
+				<label><span>密码</span></label><input type="text" name="passwd">
+                </li>
+                <li class="form">
+                	<label><span>SSH端口</span></label><input type="text" name="port">
+                </li>
+                <li class="form">
+				<label><span>分类</span></label><select name="category">
+					<option value="">选择分类</option>
+					{%for c in category%}
+					<option value="{{c.id}}">{{c.title}}</option>
+					{%endfor%}
+				</select>
+                </li>
+            </ul>
+            
+            <p class="blkFormBtn">
+            <em class="error"></em>
+            <button name="hostcommit">添加</button><button class="less" name="hostreset">Cancel</button>
+            </p>
+        </fieldset>
+        <output class="blkPadding">
+            <table>
+                <caption></caption>
+                <thead>
+                    <tr>
+                        <th>主机名</th>
+                        <th>IP</th>
+                        <th>分类</th>
+                        <th>位置</th>
+                        <th>OS</th>
+						<th>sudo</th>
+						<th>sudo密码</th>
+						<th>SSH端口</th>
+						<th>是否监控主机</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+					{%for h in host%}
+					<tr id="host_{{h.id}}">
+						<td > <font class="hostedit" id="{{h.id}}" name="title">{{h.title}}</font></td>
+						<input type="hidden" name="title_{{h.id}}" value="{{h.title}}" />
+						<td ><font class="hostedit" id="{{h.id}}" name="ip">{{h.ip}}</font></td> 
+						<input type="hidden" name="ip_{{h.id}}" value="{{h.ip}}" />
+						<td >
+							<select class="editcategory" name="{{h.id}}">
+							{%for c in category%}
+							<option value="{{c.id}}" {% ifequal c.id h.category%}selected{%endifequal%}>{{c.title}}</option>
+							{%endfor%}
+							</select>
+						</td>     
+						<input type="hidden" name="category_{{h.id}}" value="{{h.category}}" />
+						<td ><font class="hostedit" id="{{h.id}}" name="position">{{h.position}}</font></td>
+						<input type="hidden" name="position_{{h.id}}" value="{{h.position}}" />
+						<td ><font class="hostedit" id="{{h.id}}" name="os">{{h.os}}</font></td>
+						<input type="hidden" name="os_{{h.id}}" value="{{h.os}}" />
+						<td ><font class="hostedit" id="{{h.id}}" name="sudo">{{h.sudo}}</font></td>
+						<input type="hidden" name="sudo_{{h.id}}" value="{{h.sudo}}" />
+						<td ><font class="hostedit" id="{{h.id}}" name="passwd">*******</font></td>
+						<input type="hidden" name="passwd_{{h.id}}" value="{{h.passwd}}" />
+						<td ><font class="hostedit" id="{{h.id}}" name="port">{{h.port}}</font></td>
+						<input type="hidden" name="port_{{h.id}}" value="{{h.port}}" />
+						<td><input type="checkbox" value="1" name="hostM" id="{{h.id}}" {%ifequal h.hostm 1%}checked{%endifequal%} /></td>
+						<td><a  ref="{{h.id}}" class="hostdel" href="javascript:void(0);" >删除</a></td>
+                    </tr>
+					{%endfor%} 
+                </tbody>
+            </table>
+            <div class="outDesc" style="padding-top:5px;">
+            </div>
+        </output>
+    </div>
+</div>
+</body>
+</html>
