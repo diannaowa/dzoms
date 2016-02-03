@@ -10,3 +10,4 @@ dzoms is a DevOps system with python
 ```
 docker run -d -p 8000:80 --name dzoms duizhang/python:dzoms
 ```
+http://HOST_IP:8000
